@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para um arquivo CSS externo -->
+    
+    <header>
+        <h1>Sistema de Gestão de Dados Internos - CEUPA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="moradores.html">Moradores</a></li>
+                <li><a href="administracao.html">Administração</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="transparência.html"> Portal da Transparência</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Bem-vindo ao Sistema de Dados Interno</h2>
+        <p>Este sistema foi desenvolvido para facilitar o armazenamento, acesso e organização de informações dos moradores e da administração da CEUPA.</p>
+    </section>
+
+    
+    <section>
+        <h3> Login  </h3>
+
+        <form action="verifica_login.php" method="post">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required><br>
+    
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br>
+    
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <section id="moradores">
+        <h3>Cadastro de Moradores (hóspedes, morador em observação e morador efetivo)</h3>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+    
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br>
+    
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" required><br>
+    
+            <label for="instituicao">Instituição de Ensino:</label>
+            <input type="text" id="instituicao" name="instituicao" required><br>
+    
+            <label for="semestre">Semestre:</label>
+            <input type="number" id="semestre" name="semestre" required><br>
+    
+            <label for="endereco">Endereço (Casa):</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Casa I, Casa II ou Casa III" required><br>
+    
+            <label for="contatoEmergencia">Contato de Emergência:</label>
+            <input type="tel" id="contatoEmergencia" name="contatoEmergencia" required><br>
+    
+            <label for="dataEntrada">Data de Entrada na Casa:</label>
+            <input type="date" id="dataEntrada" name="dataEntrada" required><br>
+    
+            <label for="metodoEntrada">Método de Entrada:</label>
+            <select id="metodoEntrada" name="metodoEntrada" required>
+                <option value="visita">Visita</option>
+                <option value="hospedagem">Hospedagem</option>
+                <option value="editalSelecao">Edital de Seleção de Moradores</option>
+            </select><br>
+    
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+

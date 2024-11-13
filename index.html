@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Moradores - CEUPA</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Dados Interno - CEUPA</h1>
+        <nav>
+            <ul>
+                <li><a href="pag-inicio.html">Início</a></li>
+                <li><a href="moradores.html">Moradores</a></li>
+                <li><a href="administracao.html">Administração</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="transparência.html"> Portal da Transparência</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo ao Sistema de Dados Interno</h2>
+        <p>Este sistema foi desenvolvido para facilitar o armazenamento, acesso e organização de informações dos moradores e da administração da CEUPA.</p>
+    </section>
+
+    <section>
+        <h2>Formulário de Cadastro de Moradores</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco"><br>
+
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+    
+    <!-- Adicione isso onde você deseja que o gráfico apareça na sua página -->
+<div style="width: 80%; margin: 20px auto;">
+    <canvas id="graficoGestao" width="400" height="200"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Biblioteca Chart.js -->
+<script>
+    const ctx = document.getElementById('graficoGestao').getContext('2d');
+    const graficoGestao = new Chart(ctx, {
+        type: 'line', // Tipo de gráfico
+        data: {
+            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'], // Labels do eixo X
+            datasets: [{
+                label: 'Despesas (R$)',
+                data: [3000, 2500, 4000, 3500, 4500], // Dados do gráfico
+                borderColor: 'rgba(75, 192, 192, 1)', // Cor da linha
+                backgroundColor: 'rgba(75, 192, 192, 0.2)', // Cor de fundo da área sob a linha
+                fill: true // Preencher a área sob a linha
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true // Começar o eixo Y em 0
+                }
+            }
+        }
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 CEUPA. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
