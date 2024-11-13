@@ -1,8 +1,8 @@
-Sistema de Gestão Interno - CEUPA
+# Sistema de Gestão Interno - CEUPA
 
-Visão Geral
+## Visão Geral
 
-O Sistema de Dados Interno da CEUPA foi projetado com o intuito de otimizar o armazenamento, acesso e gestão de informações relacionadas à administração e aos moradores da instituição. Ele visa promover eficiência e transparência em diversos aspectos da gestão acadêmica e administrativa.
+# O Sistema de Dados Interno da CEUPA foi projetado com o intuito de otimizar o armazenamento, acesso e gestão de informações relacionadas à administração e aos moradores da instituição. Ele visa promover eficiência e transparência em diversos aspectos da gestão acadêmica e administrativa.
 
 Características do Sistema
 
